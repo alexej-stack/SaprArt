@@ -27,13 +27,7 @@
         </Grid.ColumnDefinitions>
         <Button Margin="10" Command="{Binding GenerateRectanglesCommand}" Content="Generate"/>
         <Button  Margin="10" Grid.Column="1" Grid.Row="0" Command="{Binding EvaluateBoundRectangleCommand}" Content="Find bound"/>
-        <ListView Grid.Row="1" ItemsSource="{Binding IgnoreColors}">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <TextBlock Text="{Binding }"/>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+     
         <ItemsControl Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" ItemsSource="{Binding Rectangles}">
             <ItemsControl.ItemTemplate>
                 <DataTemplate>
