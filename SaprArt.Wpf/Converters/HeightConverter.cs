@@ -7,7 +7,7 @@ public class HeightConverter : IMultiValueConverter
 {
 	public object Convert(object[] values, Type targetType, object parameter, CultureInfo culture)
 	{
-		if (values.Length == 2 && values[0] is double topRightY && values[1] is double bottomLeftY)
+		if (values is [double topRightY, double bottomLeftY])
 		{
 			return topRightY - bottomLeftY;
 		}

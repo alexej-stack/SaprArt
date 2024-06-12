@@ -1,6 +1,4 @@
-﻿using System.Drawing;
-
-namespace SaprArt.Core;
+﻿namespace SaprArt.Core;
 
 public static class RectangleUtils
 {

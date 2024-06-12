@@ -1,5 +1,4 @@
-﻿using System.Drawing;
-using Point = SaprArt.Core.Point;
+﻿using Point = SaprArt.Core.Point;
 using Rectangle = SaprArt.Core.Rectangle;
 
 namespace SaprArt.Infrastructure;

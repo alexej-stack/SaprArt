@@ -7,7 +7,7 @@ public class WidthConverter : IMultiValueConverter
 {
 	public object Convert(object[] values, Type targetType, object parameter, CultureInfo culture)
 	{
-		if (values.Length == 2 && values[0] is double topRightX && values[1] is double bottomLeftX)
+		if (values is [double topRightX, double bottomLeftX])
 		{
 			return topRightX - bottomLeftX;
 		}
